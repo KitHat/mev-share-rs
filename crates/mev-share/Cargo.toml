@@ -14,3 +14,6 @@ MEV-share client in rust
 [dependencies]
 mev-share-rpc-api.workspace = true
 mev-share-sse = { workspace = true, features = ["server"] }
+
+[features]
+native-tls = ["mev-share-sse/native-tls"]
